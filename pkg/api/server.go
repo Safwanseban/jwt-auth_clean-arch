@@ -7,7 +7,7 @@ import (
 
 func NewServerHttp(router *gin.Engine) *gin.Engine {
 	router = gin.Default()
-	router.POST("/login", handlers.Login)
+	router.POST("/login", handlers.Signup)
 
 	return router
 
