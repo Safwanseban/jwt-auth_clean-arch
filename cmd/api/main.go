@@ -7,10 +7,12 @@ import (
 	http "github.com/Safwanseban/jwt-auth/pkg/api"
 	"github.com/Safwanseban/jwt-auth/pkg/config"
 	"github.com/Safwanseban/jwt-auth/pkg/db"
-	"github.com/gin-gonic/gin"
 	"github.com/Safwanseban/jwt-auth/pkg/migrate"
+	"github.com/gin-gonic/gin"
 )
+
 var conf = config.ConfigLoad()
+
 func init() {
 
 	migrate.MigrateDB()
